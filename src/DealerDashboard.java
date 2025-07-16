@@ -65,7 +65,7 @@ public class DealerDashboard extends Dashboard {
                 String validationQuery = "select is_validated from dealers where id = ?";
                 PreparedStatement valStmt = conn.connection.prepareStatement(validationQuery);
                 ResultSet rs0 = valStmt.executeQuery();
-                dealer.setValidated(rs.getBoolean("is_validated"));
+                dealer.setValidated(rs0.getBoolean("is_validated"));
                 PreparedStatement ps = conn.connection.prepareStatement(
                         "SELECT b.id, b.family_size FROM beneficiary b " +
                         "JOIN cardnumbers cn ON cn.id = b.id WHERE cn.card_number = ?"
