@@ -1,0 +1,7 @@
+JDBC is used to connect an application to the database 
+import the packages 
+laod the driver 
+register the driver
+create connection 
+create a statement 
+close the connection 

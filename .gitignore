@@ -1,0 +1,16 @@
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.db
+*.sqlite
+*.properties
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+target/
+build/
